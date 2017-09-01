@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node nightwatch.js -g tests/UI -e chrome"
+    "test": "node nightwatch.js -g tests/UI -e ie"
   },
   "author": "",
   "license": "ISC",
