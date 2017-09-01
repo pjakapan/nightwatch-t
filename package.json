@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+  },
+  "devDependencies": {
     "nightwatch": "^0.9.16"
   }
 }
