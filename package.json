@@ -1,0 +1,14 @@
+{
+  "name": "demonight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node nightwatch.js -g tests/UI -e chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^0.9.16"
+  }
+}
