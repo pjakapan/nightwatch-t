@@ -1,15 +1,22 @@
 var fs = require('fs');
 var path = require('path');
 var handlebars = require('handlebars');
+var dateFormat = require('dateformat');
+
 
 module.exports = {
     write: function (results, options, done) {
+        var keys = Object.keys(results.modules);
+        var moduleKey = keys.shift();
+        var pathParts = moduleKey.split(path.sep);
+        var moduleName = pathParts.pop();
+        var now = new Date();
 
-        var reportFilename = options.filename_prefix + Date.now() + '.html';
+        var reportFilename = moduleName + '_' + options.filename_prefix + dateFormat(now, "yyyymmdd_HHMMss") + '.html';
         var reportFilePath = path.join(__dirname, options.output_folder, reportFilename);
 
         // read the html template
-        fs.readFile('html-reporter.hbs', function (err, data) {
+        fs.readFile('./bin/htmlReporter/html-reporter.hbs', function (err, data) {
             if (err) throw err;
 
             var template = data.toString();
@@ -19,7 +26,8 @@ module.exports = {
                 results: results,
                 options: options,
                 timestamp: new Date().toString(),
-                browser: options.filename_prefix.split('_').join(' ')
+                browser: options.filename_prefix.split('_').join(' '),
+                reportName : reportFilename
             });
 
             // write the html to a file

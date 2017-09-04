@@ -1,0 +1,32 @@
+15:37:35.819 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+15:37:35.820 INFO - Launching a standalone Selenium Server
+2017-09-04 15:37:35.850:INFO::main: Logging initialized @557ms to org.seleniumhq.jetty9.util.log.StdErrLog
+15:37:35.959 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:37:35.959 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+15:37:35.959 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:37:35.959 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:37:35.959 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
+2017-09-04 15:37:36.038:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-09-04 15:37:36.100:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@14acaea5{/,null,AVAILABLE}
+2017-09-04 15:37:36.147:INFO:osjs.AbstractConnector:main: Started ServerConnector@464bee09{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-09-04 15:37:36.147:INFO:osjs.Server:main: Started @867ms
+15:37:36.147 INFO - Selenium Server is up and running
+15:37:37.438 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+15:37:37.499 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=UI\google, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--start-maximized]}, platform=ANY}]])
+15:37:37.608 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=UI\google, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--start-maximized]}, platform=ANY}]
+Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 40500
+Only local connections are allowed.
+15:37:40.364 INFO - Detected dialect: OSS
+15:37:40.424 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=UI\google, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--start-maximized]}, platform=ANY}]]
+15:37:40.487 INFO - Executing: [get: http://www.google.com])
+15:37:42.551 INFO - Done: [get: http://www.google.com]
+15:37:42.567 INFO - Executing: [find elements: By.cssSelector: body])
+15:37:42.662 INFO - Done: [find elements: By.cssSelector: body]
+15:37:42.691 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (9b8711dd9d9d47782336e539e7eda687)] -> css selector: body]])
+15:37:42.731 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (9b8711dd9d9d47782336e539e7eda687)] -> css selector: body]]
+15:37:42.747 INFO - Executing: [get current url])
+15:37:42.765 INFO - Done: [get current url]
+15:37:44.787 INFO - Executing: [delete session: 46136040-a21e-421d-b79b-c246d3370080])
+15:37:46.046 INFO - Done: [delete session: 46136040-a21e-421d-b79b-c246d3370080]

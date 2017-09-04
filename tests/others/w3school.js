@@ -50,7 +50,7 @@ module.exports = {
       .frame(null)
       .frame(0)
       .pause(5000)
-      .assert.elementPresent("body > ui")
+      .assert.elementPresent("/html/body/h2")
       .end();
   }
 };

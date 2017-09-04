@@ -1,7 +1,9 @@
 # nightwatch-t
 
-clone repo aleady!
+clone repo already!
 
 npm install
 
 npm test
+
+reporter : nightwatch-html-custom-reporter

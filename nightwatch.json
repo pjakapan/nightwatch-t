@@ -9,13 +9,13 @@
   "globals_path": "",
   "selenium": {
     "start_process": true,
-    "server_path": "./bin/selenium-server-standalone-3.4.0.jar",
+    "server_path": "./bin/webdriver/selenium-server-standalone-3.4.0.jar",
     "log_path": "",
     "port": 4444,
     "cli_args": {
-      "webdriver.chrome.driver": "./bin/chromedriver.exe",
-      "webdriver.gecko.driver": "./bin/geckodriver.exe",
-      "webdriver.ie.driver": "./bin/IEDriverServer.exe"
+      "webdriver.chrome.driver": "./bin/webdriver/chromedriver.exe",
+      "webdriver.gecko.driver": "./bin/webdriver/geckodriver.exe",
+      "webdriver.ie.driver": "./bin/webdriver/IEDriverServer.exe"
     }
   },
   "test_workers": {

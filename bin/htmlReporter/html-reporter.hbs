@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Test Results - {{browser}}</title>
+    <title>Test Results - {{reportName}}</title>
 
     <style>
         html,
@@ -121,7 +121,7 @@
             right: 33px;
             width: 70px;
             height: 75px;
-            background: transparent url('http://nightwatchjs.org/img/logo-nightwatch.png') no-repeat;
+            background: transparent url('../bin/img/nightwatch.png') no-repeat;
             background-size: 70px 75px;
         }
     </style>
@@ -196,7 +196,7 @@
 
     <div id="nightwatch-logo"></div>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../bin/plugin/jquery-3.2.1.min.js"></script>
     <script>
         $(function () {
             $('div.stacktrace').on('click', 'a', function (evt) {

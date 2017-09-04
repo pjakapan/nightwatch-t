@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nightwatch": "^0.9.16",
-    "handlebars": "^4.0.10"
+    "dateformat": "^2.0.0",
+    "handlebars": "^4.0.10",
+    "nightwatch": "^0.9.16"
   }
 }

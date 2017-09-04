@@ -4,7 +4,7 @@ module.exports = {
     client
       .url(host)
       .waitForElementVisible('body', 1000)   
-      .assert.urlContains('cat')
+      .assert.urlContains('google')
       .pause(2000)
       .end();
   }
