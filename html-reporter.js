@@ -3,15 +3,14 @@ var path = require('path');
 var handlebars = require('handlebars');
 var dateFormat = require('dateformat');
 
-
 module.exports = {
     write: function (results, options, done) {
+        
         var keys = Object.keys(results.modules);
         var moduleKey = keys.shift();
         var pathParts = moduleKey.split(path.sep);
         var moduleName = pathParts.pop();
         var now = new Date();
-
         var reportFilename = moduleName + '_' + options.filename_prefix + dateFormat(now, "yyyymmdd_HHMMss") + '.html';
         var reportFilePath = path.join(__dirname, options.output_folder, reportFilename);
 
@@ -27,7 +26,7 @@ module.exports = {
                 options: options,
                 timestamp: new Date().toString(),
                 browser: options.filename_prefix.split('_').join(' '),
-                reportName : reportFilename
+                reportName: reportFilename
             });
 
             // write the html to a file
