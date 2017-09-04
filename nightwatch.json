@@ -39,7 +39,14 @@
     },
     "chrome": {
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName": "chrome",
+        "chromeOptions": {
+          "args": [
+            "--start-maximized"
+          ]
+        },
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
       }
     },
     "ie": {

@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node nightwatch.js -g tests/UI -e ie"
+    "test": "node nightwatch.js -g tests/UI -e chrome --reporter html-reporter.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
   "devDependencies": {
-    "nightwatch": "^0.9.16"
+    "nightwatch": "^0.9.16",
+    "handlebars": "^4.0.10"
   }
 }
