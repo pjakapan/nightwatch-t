@@ -2,8 +2,10 @@
 
 clone repo already!
 
-npm install
 
-npm test
+cmd : npm install // install modules via commandline
+
+
+cmd : npm test // try to testing and get reports
 
 reporter : nightwatch-html-custom-reporter
