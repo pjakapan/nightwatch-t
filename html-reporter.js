@@ -15,7 +15,7 @@ module.exports = {
         var reportFilePath = path.join(__dirname, options.output_folder, reportFilename);
 
         // read the html template
-        fs.readFile('./bin/htmlReporter/html-reporter.hbs', function (err, data) {
+        fs.readFile('./bin/htmlReporter/template/html-reporter.hbs', function (err, data) {
             if (err) throw err;
 
             var template = data.toString();
